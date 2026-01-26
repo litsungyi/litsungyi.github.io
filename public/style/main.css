@@ -13,27 +13,29 @@ html, body {
 [data-theme="nord"] {
   color-scheme: dark;
   
-  --p: 129 161 180; /* #81A1C1 - Primary (Frost Blue) */
-  --pc: 46 52 64; /* #2E3440 - Primary content (Dark bg) */
-  --s: 163 190 140; /* #A3BE8C - Secondary (Green) */
-  --sc: 46 52 64; /* #2E3440 - Secondary content */
-  --a: 191 97 106; /* #BF616A - Accent (Red) */
-  --ac: 216 222 233; /* #D8DEE9 - Accent content */
-  --n: 46 52 64; /* #2E3440 - Neutral (Dark) */
-  --nc: 216 222 233; /* #D8DEE9 - Neutral content */
-  --b1: 46 52 64; /* #2E3440 - Base 1 (Darker) */
-  --b2: 59 66 82; /* #3B4252 - Base 2 */
-  --b3: 67 76 94; /* #434C5E - Base 3 */
-  --bc: 236 239 244; /* #ECEFF4 - Base content */
+  /* Polar Night */
+  --nord0: 46 52 64; /* #2E3440 - The origin color or the Polar Night palette */
+  --nord1: 59 66 82; /* #3B4252 - A brighter shade color based on `nord0` */
+  --nord2: 67 76 94; /* #434C5E - An even more brighter shade color of `nord0` */
+  --nord3: 76 86 106; /* #4C566A - The brightest shade color based on `nord0` */
   
-  --er: 191 97 106; /* Error - Aurora Red */
-  --erc: 216 222 233; /* Error content */
-  --su: 163 190 140; /* Success - Aurora Green */
-  --suc: 46 52 64; /* Success content */
-  --wa: 235 203 139; /* Warning - Aurora Yellow */
-  --wac: 46 52 64; /* Warning content */
-  --in: 136 192 208; /* Info - Frost Cyan */
-  --inc: 46 52 64; /* Info content */
+  /* Snow Storm */
+  --nord4: 216 222 233; /* #D8DEE9 - The origin color or the Snow Storm palette */
+  --nord5: 236 239 244; /* #ECEFF4 - A brighter shade color of `nord4` */
+  --nord6: 229 233 240; /* #E5E9F0 - The brightest shade color based on `nord4` */
+  
+  /* Frost */
+  --nord7: 143 188 187; /* #8FBCBB - A calm and highly contrasted color reminiscent of frozen polar water */
+  --nord8: 136 192 208; /* #88C0D0 - The bright and shiny primary accent color reminiscent of pure and clear ice */
+  --nord9: 129 161 180; /* #81A1C1 - A more darkened and less saturated color reminiscent of arctic waters */
+  --nord10: 94 129 172; /* #5E81AC - A dark and intensive color reminiscent of the deep arctic ocean */
+  
+  /* Aurora */
+  --nord11: 191 97 106; /* #BF616A - Aurora Red */
+  --nord12: 208 135 112; /* #D08770 - Aurora Orange */
+  --nord13: 235 203 139; /* #EBCB8B - Aurora Yellow */
+  --nord14: 163 190 140; /* #A3BE8C - Aurora Green */
+  --nord15: 180 142 173; /* #B48EAD - Aurora Purple */
 }
 
 
@@ -58,10 +60,15 @@ p, .btn, .link {
 
 /* Navbar styling */
 .navbar {
-  border-bottom: 1px solid hsl(var(--b2));
+  background-color: hsl(var(--nord0));
+  color: hsl(var(--nord6));
+  border-bottom: 1px solid hsl(var(--nord3));
 }
 
-.navbar-start a {
+.navbar-start a,
+.navbar-center a,
+.navbar-end a {
+  color: hsl(var(--nord13));
   font-weight: 600;
 }
 
@@ -91,7 +98,7 @@ a {
 
 /* Icon styling in cards */
 .card-body i {
-  color: hsl(var(--p));
+  color: hsl(var(--nord5));
 }
 
 /* Responsive adjustments */
@@ -121,6 +128,6 @@ a {
 /* Custom divider styling */
 .divider {
   height: 2px;
-  background-color: hsl(var(--b2));
+  background-color: hsl(var(--nord9));
   margin: 2rem 0;
 }
