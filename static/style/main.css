@@ -21,8 +21,8 @@ html, body {
   
   /* Snow Storm */
   --nord4: 216 222 233; /* #D8DEE9 - The origin color or the Snow Storm palette */
-  --nord5: 236 239 244; /* #ECEFF4 - A brighter shade color of `nord4` */
-  --nord6: 229 233 240; /* #E5E9F0 - The brightest shade color based on `nord4` */
+  --nord5: 229 233 240; /* #E5E9F0 - A brighter shade color of `nord4` */
+  --nord6: 236 239 244; /* #ECEFF4 - The brightest shade color based on `nord4` */
   
   /* Frost */
   --nord7: 143 188 187; /* #8FBCBB - A calm and highly contrasted color reminiscent of frozen polar water */
