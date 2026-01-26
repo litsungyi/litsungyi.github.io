@@ -62,6 +62,10 @@ p, .btn, .link {
   background-color: hsl(var(--nord0));
   color: hsl(var(--nord6));
   border-bottom: 1px solid hsl(var(--nord3));
+  min-height: 64px;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 9999;
 }
 
 .navbar-start a,
@@ -93,6 +97,19 @@ a {
 
 .btn:hover {
   transform: scale(1.02);
+}
+
+/* Donate button styling */
+#donateForm .btn {
+  background-color: hsl(var(--nord13));
+  color: hsl(var(--nord0));
+  border-color: hsl(var(--nord13));
+}
+
+#donateForm .btn:hover {
+  background-color: hsl(var(--nord12));
+  border-color: hsl(var(--nord12));
+  color: hsl(var(--nord0));
 }
 
 /* Icon styling in cards */
