@@ -1,28 +1,11 @@
 <!doctype html>
-<html lang="en" data-theme="nord">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.84.0">
-    <meta name="description" content="Li Tsung-Yi is a game developer from Taiwan. Check out my blog, GitHub projects, and portfolio.">
-    <meta name="theme-color" content="#2E3440">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tsungyi.li/">
-    <meta property="og:title" content="Li Tsung-Yi - Game Developer" />
-    <meta property="og:description" content="Game developer from Taiwan. Explore my projects, blog posts, and game jam creations." />
+    <meta property="og:title" content="TsungYi Li" />
     <meta property="og:image" content="https://tsungyi.li/images/Profile.jpg" />
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://tsungyi.li/">
-    <meta name="twitter:title" content="Li Tsung-Yi - Game Developer">
-    <meta name="twitter:description" content="Game developer from Taiwan. Explore my projects, blog posts, and game jam creations.">
-    <meta name="twitter:image" content="https://tsungyi.li/images/Profile.jpg">
-    
     <title>LiTsungYi's Home</title>
 
     <!-- Google tag (gtag.js) -->
@@ -35,287 +18,239 @@
       gtag('config', 'UA-1062546-8');
     </script>
 
-    <!-- Tailwind CSS + daisyUI -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGkJpeuLi+ILQTYalqK5r8BV65d5O5l8jZNvBgVk7P0J0Sj4FPhp7XJZ4rMfU+TG9lmj5sGSWNmGVK/Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
 
     <style>
-      html, body {
-        font-family: 'Noto Sans TC', sans-serif;
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
-      
-      .title {
-        font-weight: 900;
-      }
-      
-      h1, h2, h3 {
-        font-family: 'Noto Sans TC', sans-serif;
-        font-weight: 900;
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
     </style>
 
     <link href="style/main.css" rel="stylesheet">
   </head>
-  <body class="bg-base-300">
+  <body>
 
-    <!-- Navbar -->
-    <div class="navbar bg-base-200 shadow-lg sticky top-0 z-50">
-      <div class="navbar-start">
-        <a href="/" class="btn btn-ghost text-xl gap-2">
-          <img src="images/Profile.jpg" alt="Profile" class="w-8 h-8 rounded-full">
-          <span class="title text-lg font-bold hidden sm:inline">Li Tsung-Yi</span>
-        </a>
+<main>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="images/Profile.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+        <span>&nbsp;</span>
+        <span class="fs-4 title"><strong>Li Tsung-Yi</strong></span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="/" class="nav-link active" aria-current="page"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" href="https://tsungyi.li/Blog" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a href="resume.html" class="nav-link"><i class="fas fa-briefcase"></i> Resume</a>
+        </li>
+        -->
+        <li class="nav-item">
+          <a target="_blank" href="https://github.com/litsungyi" class="nav-link"><i class="fab fa-github"></i> GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" href="https://www.facebook.com/litsungyi" class="nav-link"><i class="fab fa-facebook"></i> Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" href="https://www.linkedin.com/in/litsungyi" class="nav-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a href="about.html" class="nav-link"><i class="fas fa-info"></i> About</a>
+        </li>
+        -->
+        <li class="nav-item">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="6SAKXE9TESAXE">
+            <button class="donate" onclick="javascript:submit()"><i class="fab fa-paypal"></i> Donate</button>
+          </form>
+        </li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="container">
+    <div class="text-center">
+      <img src="images/Banner.jpg" class="img-fluid" alt="...">
+    </div>
+  </div>
+  
+  <div class="divider"></div>
+
+  <div class="container px-4 py-5">
+    <p class="fs-3">
+      Hi, I am Li Tsung-Yi (李宗沂).
+    </p>
+    <p class="fs-4">
+      I am a game developer from 🇹🇼 Taiwan.
+      <br/>
+      You can contact me via 
+      <a target="_blank" href="https://www.facebook.com/litsungyi" class=""><i class="fab fa-facebook"></i> Facebook</a> or
+      <a target="_blank" href="https://www.linkedin.com/in/litsungyi" class=""><i class="fab fa-linkedin"></i> LinkedIn</a>.
+      <br/>
+      Or visit my 
+      <a target="_blank" href="https://tsungyi.li/Blog" class=""><i class="fas fa-blog"></i> Blog</a> or 
+      <a target="_blank" href="https://github.com/litsungyi" class=""><i class="fab fa-github"></i> GitHub</a>.
+      <br/>
+      If you enjoy my work, you can <i class="fab fa-paypal"></i> buy me a coffee ☕.
+    </p>
+  </div>
+
+  <div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Blogs</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fas fa-blog"></i></span>
+        </div>
+        <div>
+          <h3>Blog</h3>
+          <p>一些關於 C++ 以及 Unity / C# 相關的開發文章</p>
+          <a target="_blank" href="https://tsungyi.li/Blog" class="btn btn-primary">Blog</a>
+        </div>
       </div>
-      
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 gap-1">
-          <li><a href="/" class="active"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="https://tsungyi.li/Blog" target="_blank"><i class="fas fa-blog"></i> Blog</a></li>
-          <li><a href="https://github.com/litsungyi" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-          <li><a href="https://www.facebook.com/litsungyi" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-          <li><a href="https://www.instagram.com/litsungyi" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://www.linkedin.com/in/litsungyi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        </ul>
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fab fa-wordpress"></i></span>
+        </div>
+        <div>
+          <h3>WordPress</h3>
+          <p>一些關於 Unity / C# 相關的開發文章 （舊的部落格文章，將會轉移到 Github Page）</p>
+          <a target="_blank" href="https://litsungyi.wordpress.com/" class="btn btn-primary">WordPress</a>
+        </div>
       </div>
-      
-      <div class="navbar-end gap-2">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="donateForm">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="6SAKXE9TESAXE">
-          <button class="btn btn-success btn-sm gap-1" type="submit">
-            <i class="fab fa-paypal"></i>
-            <span class="hidden sm:inline">Donate</span>
-          </button>
-        </form>
-        
-        <!-- Mobile Menu -->
-        <div class="dropdown dropdown-end lg:hidden">
-          <button class="btn btn-ghost btn-circle">
-            <i class="fas fa-bars text-xl"></i>
-          </button>
-          <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a href="/" class="active"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="https://tsungyi.li/Blog" target="_blank"><i class="fas fa-blog"></i> Blog</a></li>
-            <li><a href="https://github.com/litsungyi" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="https://www.facebook.com/litsungyi" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-            <li><a href="https://www.instagram.com/litsungyi" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/litsungyi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-          </ul>
+
+      <!--
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fab fa-github"></i></span>
+        </div>
+        <div>
+          <h3></h3>
+          <p>...</p>
+          <a target="_blank" href="" class="btn btn-primary">Link</a>
+        </div>
+      </div>
+      -->
+    </div>
+
+    <h2 class="pb-2 border-bottom">Games and Programming</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fab fa-github"></i></span>
+        </div>
+        <div>
+          <h3>GitHub</h3>
+          <p>一些製作的小工具、Game Jam、Unity 測試、遊戲修改器...</p>
+          <a target="_blank" href="https://github.com/litsungyi" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fas fa-gamepad"></i></span>
+        </div>
+        <div>
+          <h3>Global Game Jam</h3>
+          <p>一些我參加過的 Game Jam 作品</p>
+          <a target="_blank" href="https://globalgamejam.org/users/litsungyi" class="btn btn-primary">Global Game Jam</a>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fas fa-dice"></i></span>
+        </div>
+        <div>
+          <h3>BoardgameGeek</h3>
+          <p>我的桌遊收藏</p>
+          <a target="_blank" href="https://boardgamegeek.com/user/litsungyi" class="btn btn-primary">BoardgameGeek</a>
         </div>
       </div>
     </div>
 
-    <!-- Hero Banner -->
-    <div class="w-full">
-      <img src="images/Banner.jpg" alt="Banner" class="w-full h-auto object-cover">
+    <h2 class="pb-2 border-bottom">Contact Me</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fab fa-facebook"></i></span>
+        </div>
+        <div>
+          <h3>Facebook</h3>
+          <p>我的 Facebook 頁面，想要跟我聯絡可以到這裡...</p>
+          <a target="_blank" href="https://www.facebook.com/litsungyi" class="btn btn-primary">Facebook</a>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fab fa-linkedin"></i></span>
+        </div>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>我的 LinkedIn 頁面，工作上的聯繫請透過這裡...</p>
+          <a target="_blank" href="https://www.linkedin.com/in/litsungyi" class="btn btn-primary">LinkedIn</a>
+        </div>
+      </div>
     </div>
 
-    <!-- Main Content -->
-    <main class="min-h-screen bg-base-100">
-      <!-- Introduction Section -->
-      <div class="max-w-6xl mx-auto px-4 py-12">
-        <h1 class="text-4xl md:text-5xl mb-6">Hi, I am Li Tsung-Yi (李宗沂)</h1>
-        <div class="prose max-w-none text-lg leading-relaxed">
-          <p class="mb-4">
-            I am a game developer from 🇹🇼 Taiwan.
-          </p>
-          <p class="mb-4">
-            You can contact me via 
-            <a href="https://www.facebook.com/litsungyi" target="_blank" class="link link-primary">
-              <i class="fab fa-facebook"></i> Facebook
-            </a>,
-            <a href="https://www.instagram.com/litsungyi" target="_blank" class="link link-primary">
-              <i class="fab fa-instagram"></i> Instagram
-            </a> or
-            <a href="https://www.linkedin.com/in/litsungyi" target="_blank" class="link link-primary">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>.
-          </p>
-          <p class="mb-4">
-            Or visit my 
-            <a href="https://tsungyi.li/Blog" target="_blank" class="link link-primary">
-              <i class="fas fa-blog"></i> Blog
-            </a> or 
-            <a href="https://github.com/litsungyi" target="_blank" class="link link-primary">
-              <i class="fab fa-github"></i> GitHub
-            </a>.
-          </p>
-          <p>
-            If you enjoy my work, you can <i class="fab fa-paypal"></i> buy me a coffee ☕.
-          </p>
-        </div>
+    <!--
+    <div class="col d-flex align-items-start">
+      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+        <span style="font-size: 3rem;"><i class="fab fa-github"></i></span>
       </div>
-
-      <!-- Blogs Section -->
-      <div class="max-w-6xl mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold mb-8 pb-4 border-b-2 border-base-300">Blogs</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Blog Card -->
-          <div class="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="card-body">
-              <div class="text-5xl mb-4 text-primary">
-                <i class="fas fa-blog"></i>
-              </div>
-              <h3 class="card-title text-2xl">Blog</h3>
-              <p>一些關於 C++ 以及 Unity / C# 相關的開發文章</p>
-              <div class="card-actions justify-start mt-4">
-                <a href="https://tsungyi.li/Blog" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fas fa-external-link-alt"></i> Blog
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- WordPress Card -->
-          <div class="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="card-body">
-              <div class="text-5xl mb-4 text-primary">
-                <i class="fab fa-wordpress"></i>
-              </div>
-              <h3 class="card-title text-2xl">WordPress</h3>
-              <p>一些關於 Unity / C# 相關的開發文章 （舊的部落格文章，將會轉移到 Github Page）</p>
-              <div class="card-actions justify-start mt-4">
-                <a href="https://litsungyi.wordpress.com/" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fas fa-external-link-alt"></i> WordPress
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <h3></h3>
+        <p>...</p>
+        <a target="_blank" href="" class="btn btn-primary">Link</a>
       </div>
+    </div>
+    -->
+  </div>
 
-      <!-- Games and Programming Section -->
-      <div class="max-w-6xl mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold mb-8 pb-4 border-b-2 border-base-300">Games and Programming</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- GitHub Card -->
-          <div class="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="card-body">
-              <div class="text-5xl mb-4 text-primary">
-                <i class="fab fa-github"></i>
-              </div>
-              <h3 class="card-title text-2xl">GitHub</h3>
-              <p>一些製作的小工具、Game Jam、Unity 測試、遊戲修改器...</p>
-              <div class="card-actions justify-start mt-4">
-                <a href="https://github.com/litsungyi" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fas fa-external-link-alt"></i> GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+  <div class="container px-4 py-5">
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+        this.page.url = 'https://litsungyi.li';
+        this.page.identifier = 'Home';
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://tsungyi-li.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
 
-          <!-- Game Jam Card -->
-          <div class="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="card-body">
-              <div class="text-5xl mb-4 text-primary">
-                <i class="fas fa-gamepad"></i>
-              </div>
-              <h3 class="card-title text-2xl">Global Game Jam</h3>
-              <p>一些我參加過的 Game Jam 作品</p>
-              <div class="card-actions justify-start mt-4">
-                <a href="https://v3.globalgamejam.org/users/litsungyi" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fas fa-external-link-alt"></i> Game Jam
-                </a>
-              </div>
-            </div>
-          </div>
+</main>
 
-          <!-- BoardgameGeek Card -->
-          <div class="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="card-body">
-              <div class="text-5xl mb-4 text-primary">
-                <i class="fas fa-dice"></i>
-              </div>
-              <h3 class="card-title text-2xl">BoardgameGeek</h3>
-              <p>我的桌遊收藏</p>
-              <div class="card-actions justify-start mt-4">
-                <a href="https://boardgamegeek.com/user/litsungyi" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fas fa-external-link-alt"></i> BoardgameGeek
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact Me Section -->
-      <div class="max-w-6xl mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold mb-8 pb-4 border-b-2 border-base-300">Contact Me</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Facebook Card -->
-          <div class="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="card-body">
-              <div class="text-5xl mb-4 text-primary">
-                <i class="fab fa-facebook"></i>
-              </div>
-              <h3 class="card-title text-2xl">Facebook</h3>
-              <p>我的 Facebook 頁面，想要跟我聯絡可以到這裡...</p>
-              <div class="card-actions justify-start mt-4">
-                <a href="https://www.facebook.com/litsungyi" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fas fa-external-link-alt"></i> Facebook
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Instagram Card -->
-          <div class="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="card-body">
-              <div class="text-5xl mb-4 text-primary">
-                <i class="fab fa-instagram"></i>
-              </div>
-              <h3 class="card-title text-2xl">Instagram</h3>
-              <p>我的 Instagram 頁面</p>
-              <div class="card-actions justify-start mt-4">
-                <a href="https://www.instagram.com/litsungyi" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fas fa-external-link-alt"></i> Instagram
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- LinkedIn Card -->
-          <div class="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="card-body">
-              <div class="text-5xl mb-4 text-primary">
-                <i class="fab fa-linkedin"></i>
-              </div>
-              <h3 class="card-title text-2xl">LinkedIn</h3>
-              <p>我的 LinkedIn 頁面，工作上的聯繫請透過這裡...</p>
-              <div class="card-actions justify-start mt-4">
-                <a href="https://www.linkedin.com/in/litsungyi" target="_blank" class="btn btn-primary btn-sm">
-                  <i class="fas fa-external-link-alt"></i> LinkedIn
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Comments Section -->
-      <div class="max-w-6xl mx-auto px-4 py-12">
-        <div id="disqus_thread"></div>
-        <script>
-            var disqus_config = function () {
-            this.page.url = 'https://litsungyi.li';
-            this.page.identifier = 'Home';
-            };
-            (function() {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://tsungyi-li.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      </div>
-    </main>
-
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

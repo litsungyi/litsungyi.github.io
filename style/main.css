@@ -1,126 +1,31 @@
-/* daisyUI with Nord Theme Custom CSS */
-
-/* Global font family - Noto Sans TC for all elements */
-* {
-  font-family: 'Noto Sans TC', sans-serif;
-}
-
-html, body {
-  font-family: 'Noto Sans TC', sans-serif;
-}
-
-/* Custom daisyUI theme configuration with darker background */
-[data-theme="nord"] {
-  color-scheme: dark;
-  
-  --p: 129 161 180; /* #81A1C1 - Primary (Frost Blue) */
-  --pc: 46 52 64; /* #2E3440 - Primary content (Dark bg) */
-  --s: 163 190 140; /* #A3BE8C - Secondary (Green) */
-  --sc: 46 52 64; /* #2E3440 - Secondary content */
-  --a: 191 97 106; /* #BF616A - Accent (Red) */
-  --ac: 216 222 233; /* #D8DEE9 - Accent content */
-  --n: 46 52 64; /* #2E3440 - Neutral (Dark) */
-  --nc: 216 222 233; /* #D8DEE9 - Neutral content */
-  --b1: 46 52 64; /* #2E3440 - Base 1 (Darker) */
-  --b2: 59 66 82; /* #3B4252 - Base 2 */
-  --b3: 67 76 94; /* #434C5E - Base 3 */
-  --bc: 236 239 244; /* #ECEFF4 - Base content */
-  
-  --er: 191 97 106; /* Error - Aurora Red */
-  --erc: 216 222 233; /* Error content */
-  --su: 163 190 140; /* Success - Aurora Green */
-  --suc: 46 52 64; /* Success content */
-  --wa: 235 203 139; /* Warning - Aurora Yellow */
-  --wac: 46 52 64; /* Warning content */
-  --in: 136 192 208; /* Info - Frost Cyan */
-  --inc: 46 52 64; /* Info content */
-}
-
-
-/* Font family setup */
-html, body {
-  font-family: 'Noto Sans TC', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap');
 
 .title {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 900;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3 {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 900;
 }
 
-p, .btn, .link {
+p, .nav-link, .btn {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-/* Navbar styling */
-.navbar {
-  border-bottom: 1px solid hsl(var(--b2));
-}
 
-.navbar-start a {
-  font-weight: 600;
-}
-
-/* Card hover effect */
-.card {
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-}
-
-/* Link styling */
-a {
-  transition: color 0.2s ease;
-}
-
-/* Button styling */
-.btn {
-  font-family: 'Noto Sans TC', sans-serif;
-  transition: all 0.2s ease;
-}
-
-.btn:hover {
-  transform: scale(1.02);
-}
-
-/* Icon styling in cards */
-.card-body i {
-  color: hsl(var(--p));
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-  }
-  
-  .navbar-center {
-    display: none;
-  }
-  
-  .card {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  }
-  
-  .card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
-  }
-}
-
-/* Prose and text styling */
-.prose a {
-  font-weight: 500;
-}
-
-/* Custom divider styling */
 .divider {
-  height: 2px;
-  background-color: hsl(var(--b2));
-  margin: 2rem 0;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.donate {
+  border: none;
+  background-color: #ffc200;
+  border-radius: 15px;
+  padding: 5px;
 }
