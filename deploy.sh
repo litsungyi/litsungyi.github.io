@@ -16,5 +16,7 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
-git subtree pull --prefix=public origin gh-pages
-git subtree push --prefix=public git@github.com:litsungyi/litsungyi.github.io gh-pages
+# Sync gh-pages branch with latest changes
+git subtree pull --prefix=public origin gh-pages || true
+# Force push to gh-pages if there are conflicts
+git subtree push --prefix=public git@github.com:litsungyi/litsungyi.github.io gh-pages --force
