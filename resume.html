@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-theme="nord">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.84.0">
+    <meta name="description" content="Li Tsung-Yi is a game developer from Taiwan. Check out my blog, GitHub projects, and portfolio.">
+    <meta name="theme-color" content="#2E3440">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tsungyi.li/">
+    <meta property="og:title" content="Li Tsung-Yi - Game Developer" />
+    <meta property="og:description" content="Game developer from Taiwan. Explore my projects, blog posts, and game jam creations." />
+    <meta property="og:image" content="https://tsungyi.li/images/Profile.jpg" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tsungyi.li/">
+    <meta name="twitter:title" content="Li Tsung-Yi - Game Developer">
+    <meta name="twitter:description" content="Game developer from Taiwan. Explore my projects, blog posts, and game jam creations.">
+    <meta name="twitter:image" content="https://tsungyi.li/images/Profile.jpg">
+
+    <title>LiTsungYi's Home</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1062546-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1062546-8');
+    </script>
+
+    <!-- Tailwind CSS + daisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/fontawesome-free-7.1.0-web/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="style/main.css" rel="stylesheet">
+  </head>
+  <body class="bg-base-300">
+
+    <!-- Navbar -->
+    <div class="navbar shadow-lg sticky top-0 z-50" style="background-color: hsl(46, 52, 64);">
+      <div class="navbar-start">
+        <a href="/" class="btn btn-ghost text-xl gap-2">
+          <img src="images/Profile.jpg" alt="Profile" class="w-8 h-8 rounded-full">
+          <span class="title text-lg font-bold hidden sm:inline">Li Tsung-Yi</span>
+        </a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-1">
+          <li><a href="/" class="active"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="https://tsungyi.li/Blog" target="_blank"><i class="fas fa-blog"></i>Blog</a></li>
+          <li><a href="https://github.com/litsungyi" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+          <li><a href="https://www.facebook.com/litsungyi" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+          <li><a href="https://www.instagram.com/litsungyi" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/litsungyi" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+          <li><a href="resume.html"><i class="fas fa-file-alt"></i>Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end gap-2">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="donateForm">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="6SAKXE9TESAXE">
+          <button class="btn btn-success btn-sm gap-1" type="submit">
+            <i class="fab fa-paypal"></i>
+            <span class="hidden sm:inline">Donate</span>
+          </button>
+        </form>
+
+        <!-- Mobile Menu -->
+        <div class="dropdown dropdown-end lg:hidden">
+          <button class="btn btn-ghost btn-circle">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+          <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="/" class="active"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="https://tsungyi.li/Blog" target="_blank"><i class="fas fa-blog"></i>Blog</a></li>
+            <li><a href="https://github.com/litsungyi" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+            <li><a href="https://www.facebook.com/litsungyi" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.instagram.com/litsungyi" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/litsungyi" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+            <li><a href="resume.html"><i class="fas fa-file-alt"></i>Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="w-full flex justify-center overflow-hidden" style="max-height: 400px;">
+      <img src="images/Banner.jpg" alt="Banner" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-base-100">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div id="education_experience section" class="container mx-auto px-4 py-8">
+          <div class="title">
+            <h2><a name="education_experience"></a>Education & Experience</h2>
+          </div>
+          <canvas id="gitGraph"></canvas>
+        </div>
+        <div id="games" class="container py-4">
+          <h2>IGS</h2>
+          <h3>Game淘平台/GameTower</h3>
+          <img src="images/gametower.png" alt="Game淘平台" width="192" />
+          <h3>明星三缺一/Star 31</h3>
+          <img src="images/mj371.png" alt="明星三缺一" width="96" height="96" />
+
+          <h2>Maxon</h2>
+          <h3>加利利旅遊</h3>
+          <img src="images/galilee.png" alt="加利利旅遊" width="96" height="96" />
+          <h3>織女星寵/Vega</h3>
+          <img src="images/vega.png" alt="織女星寵" width="96" height="96" />
+          <h3>百萬智多星/Ichiban</h3>
+          <img src="images/ichiban.png" alt="百萬智多星" width="96" height="96" />
+
+          <h2>Sigono</h2>
+          <h3>地球計畫/The Day We Found Earth</h3>
+          <img src="images/Beyond.jpg" alt="地球計畫" width="96" height="96" />
+          <h3>靈魂之橋/Rocket of Whisper</h3>
+          <img src="images/Heaven.jpg" alt="靈魂之橋" width="96" height="96" />
+
+          <h2>Akatsuki</h2>
+          <h3>ONE PIECE BON！BON！JOURNEY！！</h3>
+          <img src="images/bonbon.jpeg" alt="ONE PIECE BON！BON！JOURNEY！！" width="96" height="96" />
+          <h3>DRAGON BALL Z DOKKAN BATTLE</h3>
+          <img src="images/dokkan.webp" alt="DRAGON BALL Z DOKKAN BATTLE" width="96" height="96" />
+
+          <h2>Game Jam</h2>
+          <h3>The Magnificently Unholy Quest of the Mighty Sword of Sweet Blessings</h3>
+          <img src="images/ggj2016.png" alt="The Magnificently Unholy Quest of the Mighty Sword of Sweet Blessings" width="96" height="96" />
+          <a href="https://globalgamejam.org/2016/games/magnificently-unholy-quest-mighty-sword-sweet-blessings">Global Game Jam 2016</a>
+          <h3>Life Journey</h3>
+          <img src="images/ggj2017.png" alt="Life Journey" width="96" height="96" />
+          <a href="https://globalgamejam.org/2017/games/life-journey">Global Game Jam 2017</a>
+          <h3>Akatsuki Hackthon</h3>
+          <img src="images/aktsk2020.png" alt="Akatsuki Hackthon" width="96" height="96" />
+          <h3>Brain Repair</h3>
+          <img src="images/ggj2020.jpg" alt="Brain Repair" width="96" height="96" />
+          <a href="https://globalgamejam.org/2020/games/brain-repair-3">Global Game Jam 2020</a>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="scripts/gitgraph.min.js"></script>
+    <script src="scripts/education_and_experience.js"></script>
+  </body>
+</html>
