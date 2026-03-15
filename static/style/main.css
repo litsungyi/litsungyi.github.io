@@ -119,16 +119,15 @@ a {
 }
 
 /* Donate button styling */
-#donateForm .btn {
+.donateForm .btn {
+  border-radius: 8px;
   background-color: var(--nord13);
-  color: var(--nord0);
   border-color: var(--nord13);
 }
 
-#donateForm .btn:hover {
+.donateForm .btn:hover {
   background-color: var(--nord12);
   border-color: var(--nord12);
-  color: var(--nord0);
 }
 
 /* Icon styling in cards */
@@ -144,6 +143,25 @@ a {
 
   .navbar-center {
     display: none;
+  }
+
+  .menu-item a {
+    color: var(--nord3);
+  }
+
+  .menu-item a:hover {
+    color: var(--nord3);
+  }
+
+  /* Donate button styling */
+  .donateForm .btn {
+    background-color: var(--nord13);
+    color: var(--nord4);
+  }
+
+  .donateForm .btn:hover {
+    background-color: var(--nord2);
+    color: var(--nord6);
   }
 
   .card {
