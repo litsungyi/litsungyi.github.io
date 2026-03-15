@@ -11,31 +11,29 @@ html, body {
 
 /* Custom daisyUI theme configuration with darker background */
 [data-theme="nord"] {
-  color-scheme: dark;
-  
   /* Polar Night */
-  --nord0: 46 52 64; /* #2E3440 - The origin color or the Polar Night palette */
-  --nord1: 59 66 82; /* #3B4252 - A brighter shade color based on `nord0` */
-  --nord2: 67 76 94; /* #434C5E - An even more brighter shade color of `nord0` */
-  --nord3: 76 86 106; /* #4C566A - The brightest shade color based on `nord0` */
-  
+  --nord0: #2E3440; /* #2E3440 - The origin color or the Polar Night palette */
+  --nord1: #3B4252; /* #3B4252 - A brighter shade color based on `nord0` */
+  --nord2: #434C5E; /* #434C5E - An even more brighter shade color of `nord0` */
+  --nord3: #4C566A; /* #4C566A - The brightest shade color based on `nord0` */
+
   /* Snow Storm */
-  --nord4: 216 222 233; /* #D8DEE9 - The origin color or the Snow Storm palette */
-  --nord5: 229 233 240; /* #E5E9F0 - A brighter shade color of `nord4` */
-  --nord6: 236 239 244; /* #ECEFF4 - The brightest shade color based on `nord4` */
-  
+  --nord4: #D8DEE9; /* #D8DEE9 - The origin color or the Snow Storm palette */
+  --nord5: #E5E9F0; /* #E5E9F0 - A brighter shade color of `nord4` */
+  --nord6: #ECEFF4; /* #ECEFF4 - The brightest shade color based on `nord4` */
+
   /* Frost */
-  --nord7: 143 188 187; /* #8FBCBB - A calm and highly contrasted color reminiscent of frozen polar water */
-  --nord8: 136 192 208; /* #88C0D0 - The bright and shiny primary accent color reminiscent of pure and clear ice */
-  --nord9: 129 161 180; /* #81A1C1 - A more darkened and less saturated color reminiscent of arctic waters */
-  --nord10: 94 129 172; /* #5E81AC - A dark and intensive color reminiscent of the deep arctic ocean */
-  
+  --nord7: #8FBCBB; /* #8FBCBB - A calm and highly contrasted color reminiscent of frozen polar water */
+  --nord8: #88C0D0; /* #88C0D0 - The bright and shiny primary accent color reminiscent of pure and clear ice */
+  --nord9: #81A1C1; /* #81A1C1 - A more darkened and less saturated color reminiscent of arctic waters */
+  --nord10: #5E81AC; /* #5E81AC - A dark and intensive color reminiscent of the deep arctic ocean */
+
   /* Aurora */
-  --nord11: 191 97 106; /* #BF616A - Aurora Red */
-  --nord12: 208 135 112; /* #D08770 - Aurora Orange */
-  --nord13: 235 203 139; /* #EBCB8B - Aurora Yellow */
-  --nord14: 163 190 140; /* #A3BE8C - Aurora Green */
-  --nord15: 180 142 173; /* #B48EAD - Aurora Purple */
+  --nord11: #BF616A; /* #BF616A - Aurora Red */
+  --nord12: #D08770; /* #D08770 - Aurora Orange */
+  --nord13: #EBCB8B; /* #EBCB8B - Aurora Yellow */
+  --nord14: #A3BE8C; /* #A3BE8C - Aurora Green */
+  --nord15: #B48EAD; /* #B48EAD - Aurora Purple */
 }
 
 /* Font family setup */
@@ -45,6 +43,7 @@ html, body {
 
 .title {
   font-family: 'Noto Sans TC', sans-serif;
+  color: var(--nord4);
   font-weight: 900;
 }
 
@@ -59,9 +58,9 @@ p, .btn, .link {
 
 /* Navbar styling */
 .navbar {
-  background-color: hsl(var(--nord0));
-  color: hsl(var(--nord6));
-  border-bottom: 1px solid hsl(var(--nord3));
+  background-color: var(--nord0);
+  color: var(--nord6);
+  border-bottom: 1px solid var(--nord3);
   min-height: 64px;
   padding: 0 1rem;
   position: relative;
@@ -71,13 +70,14 @@ p, .btn, .link {
 .navbar-start a,
 .navbar-center a,
 .navbar-end a {
-  color: hsl(var(--nord13));
+  color: var(--nord13);
   font-weight: 600;
 }
 
 /* Card hover effect */
 .card {
   transition: all 0.3s ease;
+  background-color: var(--nord9);
 }
 
 .card:hover {
@@ -95,26 +95,45 @@ a {
   transition: all 0.2s ease;
 }
 
+.menu-item {
+  color: var(--nord4);
+  border-radius: 8px;
+}
+
+.menu-item a {
+  color: var(--nord4);
+  border-radius: 8px;
+}
+
+.menu-item a:hover {
+  background-color: var(--nord2);
+  color: var(--nord6);
+}
+
+.menu-item {
+  transform: scale(1.02);
+}
+
 .btn:hover {
   transform: scale(1.02);
 }
 
 /* Donate button styling */
 #donateForm .btn {
-  background-color: hsl(var(--nord13));
-  color: hsl(var(--nord0));
-  border-color: hsl(var(--nord13));
+  background-color: var(--nord13);
+  color: var(--nord0);
+  border-color: var(--nord13);
 }
 
 #donateForm .btn:hover {
-  background-color: hsl(var(--nord12));
-  border-color: hsl(var(--nord12));
-  color: hsl(var(--nord0));
+  background-color: var(--nord12);
+  border-color: var(--nord12);
+  color: var(--nord0);
 }
 
 /* Icon styling in cards */
 .card-body i {
-  color: hsl(var(--nord5));
+  color: var(--nord5);
 }
 
 /* Responsive adjustments */
@@ -122,15 +141,15 @@ a {
   .navbar {
     flex-wrap: wrap;
   }
-  
+
   .navbar-center {
     display: none;
   }
-  
+
   .card {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   }
-  
+
   .card:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
   }
@@ -144,6 +163,6 @@ a {
 /* Custom divider styling */
 .divider {
   height: 2px;
-  background-color: hsl(var(--nord9));
+  background-color: var(--nord9);
   margin: 2rem 0;
 }
